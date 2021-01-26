@@ -20,14 +20,6 @@ public class SignUpPage extends PageObject {
     private String emptyPasswordError = "/html/body/div[1]/div[2]/div/form/div[2]/div/div/label";
     private By errorLabel = By.xpath("//label[@class='control-label-validation ng-binding ng-scope']");
 
-    @Override
-    public String toString() {
-        return "pages.SignUpAge{" +
-                "errorMessage='" + errorMessage + '\'' +
-                ", emptyLoginError='" + emptyLoginError + '\'' +
-                ", emptyPasswordError='" + emptyPasswordError + '\'' +
-                '}';
-    }
 
     public SignUpPage typeEmail(String email) {
         find(emailField).sendKeys(email);
